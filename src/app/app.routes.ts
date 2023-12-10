@@ -3,6 +3,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './auth.guard';
 
 export const routes: Routes = [
   {
@@ -19,6 +22,16 @@ export const routes: Routes = [
     path: 'contact',
     title: 'Contact',
     component: ContactComponent,
+  },
+  {
+    path: 'signup',
+    title: 'Signup',
+    component: SignupComponent,
+  },
+  {
+    path: 'login',
+    title: 'Login',
+    component: LoginComponent,
   },
   {
     path: '',
